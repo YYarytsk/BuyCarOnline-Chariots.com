@@ -1,0 +1,23 @@
+<div class="row ml-4" *ngIf="product">
+    <h2>{{product.name}}</h2>
+    <div class="col-6">
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid w-100">
+    </div>
+    <div class="col-6">
+        <h3>{{product.name}}</h3>
+        <p>{{product.price | currency}}</p>
+        <div>
+            <button (click)="addItemToShoppingCart()" class="btn-outline-primary btn-lg">Purchase</button>
+            <button class="btn-outline-primary btn-lg">Pre-Approval</button>
+            <button class="btn-outline-primary btn-lg" href="https://www.travelers.com">Insurance</button>
+        </div>
+        <div class="col-8 mt-5">
+            <h4>Description</h4>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        
+    </div>
+</div>
+
